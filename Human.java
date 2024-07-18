@@ -13,14 +13,18 @@ class Humans
         this.name = name;
        // this.population = population;
     };
+    protected void get()
+    {
+        System.out.println("name : "+ name+ "age : "+ age + "population : "+Humans.population);
+    }
 }
 public class Human {
     public static void main(String args[])
     {
         Humans h1 = new Humans(12,"Amruta");
+        h1.get();
         Humans h2 = new Humans(15,"poo");
-        System.out.println("name : "+h1.name+ "age : "+ h1.age + "population : "+Humans.population);
-        System.out.println("name : "+h2.name+ "age : "+ h2.age + "population : "+Humans.population);
+        h2.get();
     }
 }
 
